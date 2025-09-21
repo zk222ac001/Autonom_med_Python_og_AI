@@ -80,7 +80,12 @@ class robot:
 # and left wheel pins (32, 33).
 robby = robot("robby",(29,31),(32,33))
 print(robby.name , robby.rwheel, robby.lwheel, robby.rwheel_f, robby.lwheel_f)
+# Robot moving forward
+print("Robot moving forward.......")
 robby.forward(3)
+print("Robot moving backward.......")
 robby.backward(3)
+print("Robot turning left.......")
 robby.left_turn(3)
+print("Robot turning right.......")
 robby.right_turn(3)
