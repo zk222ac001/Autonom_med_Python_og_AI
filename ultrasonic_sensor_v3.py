@@ -4,8 +4,8 @@ import time
 
 GPIO.setmode(GPIO.BOARD)
 
-TRIG = 16
-ECHO = 18
+TRIG = 7    # BOARD pin 7 = GPIO4
+ECHO = 13   # BOARD pin 13 = GPIO27
 i=0
 
 GPIO.setup(TRIG,GPIO.OUT)
