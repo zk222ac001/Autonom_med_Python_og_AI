@@ -85,3 +85,19 @@ cv2.waitKey(0)
 It’s good practice to add:
 '''
 cv2.destroyAllWindows()
+
+# Visual Flow :
+# 📷 Original Image → 🎨 Convert to HSV → 🧱 Create Mask → 🎯 Extract Red Areas
+
+'''
+............................Why Masking Is Important.............................
+It helps the robot “see” only the color of interest (e.g., red ball).
+The rest of the scene (background, floor, lighting) is ignored.
+The mask can now be processed to find the object’s shape, position, and size.
+'''
+
+'''
+Color masking is like giving the robot ‘blinders’ — it only sees the specific color we want,
+which makes detection simpler and faster. Once the color mask is ready, we can use contours to 
+identify the shape and position of the object.”
+'''
